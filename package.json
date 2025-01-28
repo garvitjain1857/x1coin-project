@@ -1,0 +1,35 @@
+{
+  "name": "x1coin-project",
+  "version": "1.0.0",
+  "description": "X1Coin smart contract implementation with token distribution and staking",
+  "main": "index.js",
+  "scripts": {
+      "clean": "hardhat clean",
+      "compile": "hardhat compile",
+      "test": "hardhat test",
+      "coverage": "hardhat coverage",
+      "deploy": "hardhat run scripts/deploy.js",
+      "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+      "verify": "hardhat verify",
+      "lint": "solhint 'contracts/**/*.sol'",
+      "lint:fix": "solhint 'contracts/**/*.sol' --fix"
+  },
+  "keywords": [
+      "blockchain",
+      "ethereum",
+      "smartcontract",
+      "solidity",
+      "token",
+      "staking"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+      "@openzeppelin/contracts": "^5.0.1",
+      "dotenv": "^16.4.1",
+      "hardhat": "^2.19.4",
+      "solhint": "^4.1.1",
+      "solidity-coverage": "^0.8.5"
+  }
+}
